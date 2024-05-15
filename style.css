@@ -1,0 +1,620 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.navbar {
+  height: 7vh;
+  width: 100%;
+  background-color: #009e5f;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.brand-logo {
+  height: 100px;
+  width: 120px;
+  margin-left: 20px;
+  margin-top: 3.5rem;
+  background-image: url(https://www.7up.com/images/7up-logo-large.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+nav .right-nav {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.right-nav a {
+  color: white;
+  padding: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.right-nav a:hover{
+  color: rgb(69, 32, 32);
+}
+
+.content-1st {
+  display: flex;
+  height: 837px;
+}
+
+.left-div {
+  height: 100%;
+  width: 40%;
+}
+
+.sub-left {
+
+  width: 100%;
+
+  height: 500px;
+  margin-top: 90px;
+  margin-left: 29px;
+  padding-right: 30px;
+}
+
+.sub-left .picture {
+  overflow: hidden;
+  /* border: 2px solid black; */
+  width: 402px;
+  height: 100%;
+  /* margin-top: 10vh; */
+}
+
+.picture img {
+  width: 402px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 402px;
+
+  margin-top: 10vh;
+}
+
+.textbox-1 {
+  width: 402px;
+  display: block;
+
+  text-align: center;
+
+}
+
+.textbox-1 h2 {
+  font-size: 30px;
+  color: #009e5f;
+  font-weight: 700;
+
+}
+
+.textbox-2 {
+  display: inline-block;
+  margin-top: 15px;
+  border: 3px solid #009e5f;
+  font-weight: 700;
+  color: #009e5f;
+  font-size: 20px;
+}
+
+.explore-now {
+  display: block;
+  padding: 10px 20px;
+  background-size: 205% 100%;
+  background-position: right bottom;
+  font-size: 20px;
+}
+
+.explore-now:hover {
+  background: linear-gradient(to right, #009e5f 100%, white 0%);
+  color: white;
+  transition: all 200ms ease;
+
+}
+
+.right-div {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://www.7up.com/images/products/slider/7up_featured.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 7vh;
+}
+
+.play-button {
+  height: 19%;
+  width: 20%;
+  position: relative;
+  margin-top: 30%;
+  margin-left: 30%;
+  transform: translate(49%, 44%);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.background-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://www.7up.com/images/play-btn.png);
+  background-repeat: no-repeat;
+  background-size: 65%;
+  background-position: center;
+}
+
+section {
+  padding: 5rem 7%;
+}
+
+.content-2nd {
+  height: 900px;
+  background-image: url(https://www.7up.com/images/simple-7up/7up-simple-banner.jpg);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.text-content {
+  padding-top: 7rem;
+}
+
+.text-content h1 {
+  color: #fff;
+  font-size: 4rem;
+  line-height: 3.55rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.text-content p {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 2.5rem;
+
+}
+
+.text-content2 {
+  display: inline-block;
+  margin-top: 4vh;
+  border: 3px solid #009e5f;
+  font-weight: bolder;
+  color: #009e5f;
+  font-size: 3rem;
+  background-color: #fff;
+  min-height: 5vh;
+
+}
+
+.text-content2 .explore-now {
+  display: block;
+  padding: 26px 20px;
+  background-size: 205% 100%;
+  background-position: right bottom;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.content-cocktail {
+  height: 70vh;
+  background-image: url(https://www.7up.com/images/modules/module_cocktail.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 50%;
+  background-attachment: fixed;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 100%;
+  height: 5%;
+}
+
+.content-cocktail a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.cocktail-recipes .box h2 {
+  font-size: 2.25rem;
+  font-weight: 5%;
+  padding: 20px;
+  background-color: #fe5887;
+}
+
+.content-cocktail:hover h2 {
+  margin: -10px;
+  animation: one 2s forwards;
+}
+
+@keyframes one {
+  from {
+    background: linear-gradient(to right,
+        #fe5887 0%,
+        #fe5887 50%,
+        rgba(255, 255, 255, 0.223) 50%,
+        rgba(255, 255, 255, 0.123) 100%);
+    background-size: 200% 100%;
+    /* Stretch the gradient twice the element width */
+    background-position: right;
+    /* Start color from right */
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    background: linear-gradient(to right,
+        #fe5887 0%,
+        #fe5887 50%,
+        rgba(255, 255, 255, 0.262) 50%,
+        rgba(255, 255, 255, 0.058) 100%);
+    background-size: 200% 100%;
+    background-position: left;
+    /* Animate color to fill from left */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.content-cooking {
+  background-image: url(https://www.7up.com/images/modules/module_cooking.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cooking-recipes .box {
+  width: 100%;
+  height: 5%;
+}
+
+.content-cooking a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.cooking-recipes .box h2 {
+  font-size: 2.25rem;
+  background-color: #6ba13f;
+  ;
+  font-weight: 5%;
+  padding: 20px;
+}
+
+.content-cooking:hover h2 {
+  margin: -10px;
+  animation: tow 2s forwards;
+}
+
+@keyframes tow {
+  from {
+    background: linear-gradient(to right,
+        #6ba13f 0%,
+        #6ba13f 50%,
+        rgba(255, 255, 255, 0.333) 50%,
+        rgba(255, 255, 255, 0.112) 100%);
+    background-size: 200% 100%;
+    /* Stretch the gradient twice the element width */
+    background-position: right;
+    /* Start color from right */
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    background: linear-gradient(to right,
+        #6ba13f 0%,
+        #6ba13f 50%,
+        rgba(255, 255, 255, 0.333) 50%,
+        rgba(255, 255, 255, 0.112) 100%);
+    background-size: 200% 100%;
+    background-position: left;
+    /* Animate color to fill from left */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.content-recipes {
+  background-image: url(https://www.7up.com/images/modules/module_seeall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content-recipes a {
+  text-decoration: none;
+  color: white;
+}
+
+.all-recipes .box {
+  width: 100%;
+  height: 5%;
+}
+
+.all-recipes .box h2 {
+  font-size: 225%;
+  font-weight: 5%;
+  padding: 20px;
+  background-color: #c064ac;
+  text-transform: uppercase;
+}
+
+.content-recipes:hover h2 {
+  margin: -10px;
+  animation: three 2s forwards;
+}
+
+@keyframes three {
+  from {
+    background: linear-gradient(to right,
+        #c064ac 0%,
+        #c064ac 50%,
+        rgba(255, 255, 255, 0.471) 50%,
+        rgba(255, 255, 255, 0.108) 100%);
+    background-size: 200% 100%;
+    /* Stretch the gradient twice the element width */
+    background-position: right;
+    /* Start color from right */
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    background: linear-gradient(to right,
+        #c064ac 0%,
+        #c064ac 50%,
+        rgba(255, 255, 255, 0.471) 50%,
+        rgba(255, 255, 255, 0.108) 100%);
+    background-size: 200% 100%;
+    background-position: left;
+    /* Animate color to fill from left */
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.product {
+  display: flex;
+  width: 100%;
+  height: 800px;
+}
+
+.product .left-side {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+  /* margin-left: 20px; */
+}
+
+.left-side #one {
+  width: 50%;
+  height: 50%;
+  padding: 20px;
+  text-align: center;
+}
+
+.left-side #one:hover img {
+  width: 190px;
+}
+
+.left-side #two {
+  width: 50%;
+  height: 50%;
+  padding: 3px 5px 3px;
+  text-align: center;
+}
+
+.left-side #two:hover img {
+  height: 400px;
+  padding-right: 50%;
+}
+
+.left-side #three {
+  width: 50%;
+  height: 50%;
+  padding: 15px;
+  text-align: center;
+
+}
+
+.left-side #three:hover img {
+  width: 190px;
+}
+
+.left-side #four {
+  width: 50%;
+  height: 50%;
+  padding: 15px;
+  text-align: center;
+}
+
+.left-side #four:hover img {
+  width: 210px;
+}
+
+.left-side img {
+  padding: 5px;
+}
+
+.right-side {
+  width: 52%;
+  height: 100%;
+  background: #ececec;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-top {
+  padding: 85px 100px 69px 100px;
+  ;
+}
+
+.right-side .right-top h1 {
+  color: #009e5f;
+  font-size: 5.25rem;
+  position: relative;
+}
+
+.dot {
+  position: absolute;
+  height: 1.7vh;
+  width: 1.7vh;
+  background-color: #d71e05;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 4rem;
+}
+
+.right-side .right-top p {
+  color: #818182;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.right-bottom {
+  margin-top: auto;
+}
+
+.right-bottom img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  padding-left: 82px;
+
+}
+
+footer {
+  background-image: url(https://www.7up.com/images/footer-bg.jpg);
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.relative-and-absolute .text {
+  width: 500px;
+  height: 10px;
+  margin: 10% 50%;
+  background-color: red;
+  position: absolute;
+}
+footer {
+  background-image: url(https://www.7up.com/images/footer-bg.jpg);
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+}
+
+.relative-and-absolute .text {
+  width: 500px;
+  height: 10px;
+  margin: 10% 50%;
+  /* background-color: red; */
+  position: absolute;
+}
+
+.relative-and-absolute .text h1 {
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-size: 5rem;
+  transform: matrix(.90, -0.4513, 0, 1, 21.8691, 152.353);
+}
+
+.relative-and-absolute .box {
+
+  margin-left: 200px;
+  position: absolute;
+  margin-top: 632px;
+  padding: 15px;
+  max-width: 1068px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, .75);
+  width: 75%;
+  height: 150px;
+
+}
+
+.relative-and-absolute .box .first-line {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.relative-and-absolute .box .first-line a {
+  text-decoration: none;
+  color: #636363;
+  font-size: 25px;
+  padding: 0px 5px;
+}
+
+.relative-and-absolute .box .middle-line {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.relative-and-absolute .box .middle-line a {
+  font-family: "Josefin Sans", sans-serif;
+  text-decoration: none;
+  color: #636363;
+  padding: 0px 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.relative-and-absolute .box .middle-line a:hover {
+  text-decoration: underline;
+}
+
+.relative-and-absolute .box .last-line {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: #636363;
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 600;
+}
